@@ -19,7 +19,7 @@ x /= y; //x = x / y
 console.log("x =", "| y =", y);
 
 x **= y //x = x elevado a y 
-console.log("x =", x "| y =", y);
+console.log("x =", x, "| y =", y);
 
 x %= y //x = x resto da divisão inteira de x por y
 console.log("x =", "| y =", y);

@@ -19,9 +19,11 @@ var usuario = ["Ítalo",
 "Rua: Almeida silva- Jaú",
 "Bob",
 ];
+
 console.log("Olá ,", usuario[0], "! Seja bem vindo ao nosso sistema.");
-console.log("Você mora no endereço ,", usuario[5], "E tem um pet chamado", usuario[6]);
-console.log("Sua idade é", usuario[2], "e gosta muito da fruta", usuario[4]);
+console.log("Você mora no endereço ,", usuario[4], "E tem um pet chamado", usuario[5]);
+console.log("Sua idade é", usuario[1], "e gosta muito da fruta", usuario[3]);
+console.log("Sua cor favorita é", usuario[2]);
 
 
 

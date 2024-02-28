@@ -10,7 +10,7 @@ console.table(matriz);
 
 // Obtendo elemento com base e seus índices
 console.log("Matriz[1, 2]=", matriz[1][2]);
-console.log("Mtriz[2, 0]=", matriz[2][0]);
+console.log("Matriz[2, 0]=", matriz[2][0]);
 
 //Alterando valores de elementos com base e seus interesses
 matriz[1][2] = 20;
