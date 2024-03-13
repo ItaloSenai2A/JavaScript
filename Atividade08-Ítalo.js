@@ -79,3 +79,57 @@ melancia.pedido();
 
 morango.setPreco(10.51);
 morango.pedido();
+
+console.log(
+  "--------------------------------------------------------------------"
+);
+
+//1.Comparação de strings (sem case sensitive):
+//Escreva uma função em JavaScript que recebe duas strings e verifica se elas são iguais, ignorando o tamanho das letras (maiúsculas e minúsculas).
+
+//2.Extrair números de uma string:
+//Crie uma função em JavaScript que recebe uma string e retorna uma lista contendo apenas os números encontrados nela.
+
+//3.Inverter a ordem das palavras em uma frase:
+//Desenvolva uma função em JavaScript que recebe uma frase e retorna uma nova string com a ordem das palavras invertida.
+
+function saoIguaisIgnorandoCase(str1, str2) {
+  return str1.toLowerCase() === str2.toLowerCase();
+}
+
+const resultado = saoIguaisIgnorandoCase("Olá", "oLá");
+console.log("O resultado é", resultado);
+
+console.log("-------------------------------------------------------");
+
+function extrairNumeros(str) {
+  const numerosEncontrados = str.match(/\d+/g);
+
+  if (numerosEncontrados) {
+      return numerosEncontrados.map(Number);
+  } else {
+      return [];
+  }
+}
+
+const minhaString = "Minha data de nascimento: 28/03/2008";
+const numeros = extrairNumeros(minhaString);
+
+console.table(numeros);
+
+console.log("-------------------------------------------------");
+
+function inverterOrdemDasPalavras(frase) {
+  const palavras = frase.split(' ');
+  const fraseInvertida = palavras.reverse().join(' ');
+  return fraseInvertida;
+}
+
+const minhaFrase = "Como você está";
+const fraseInvertida = inverterOrdemDasPalavras(minhaFrase);
+
+console.log(fraseInvertida);
+
+
+
+
